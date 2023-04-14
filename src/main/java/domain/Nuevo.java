@@ -3,7 +3,7 @@ package domain;
 public class Nuevo implements Estado{
 
   public double precioPorEstado(int valorBase){
-    return 1;
+    return valorBase;
 
   }
 

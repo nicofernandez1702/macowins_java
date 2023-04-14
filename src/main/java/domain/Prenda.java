@@ -3,21 +3,24 @@ package domain;
 public class Prenda {
   private int valorBase;
   private Estado estado;
-  private String tipo;
+  private TipoPrenda tipo;
 
-  public Prenda(String tipo,Estado estado,int valor){
+  public Prenda(TipoPrenda tipo,Estado estado,int valor){
     this.estado = estado;
     this.tipo = tipo;
     this.valorBase=valor;
   }
 
-  public String getTipo() {
-    return tipo;
+  public TipoPrenda getTipo() {
+    return this.tipo;
   }
 
   public double precio(){
-    return this.valorBase * estado.precioPorEstado(this.valorBase);
+    return  estado.precioPorEstado(this.valorBase);
   }
 
+  enum TipoPrenda {
+    SACO , PANTALON , CAMISA
+  }
 
 }

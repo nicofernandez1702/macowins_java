@@ -10,7 +10,7 @@ public class Promocion implements Estado{
   }
 
   public double precioPorEstado(int valorBase){
-    return 1 - ( (double) this.valorPromocional / valorBase);
+    return valorBase -  this.valorPromocional ;
 
   }
 
