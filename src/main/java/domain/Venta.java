@@ -6,7 +6,7 @@ import java.util.List;
 public class Venta {
 
   private int fecha;
-  private List<Prenda> prendas =new ArrayList<>();
+  List<Prenda> prendas =new ArrayList<>();
 
 
   public Venta(int fecha) {

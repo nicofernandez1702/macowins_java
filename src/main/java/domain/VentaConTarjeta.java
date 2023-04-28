@@ -14,7 +14,7 @@ public class VentaConTarjeta extends Venta{
 
   @Override
   public double precioVenta() {
-    return super.precioVenta() + this.recargo(prendas);
+    return super.precioVenta() + this.recargo(this.prendas);
   }
 
   public double recargo(List<Prenda> p){
