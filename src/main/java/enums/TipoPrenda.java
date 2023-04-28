@@ -1,0 +1,5 @@
+package enums;
+
+public enum TipoPrenda {
+  SACO , PANTALON , CAMISA
+}

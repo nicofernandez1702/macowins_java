@@ -1,5 +1,5 @@
 package domain;
 
 public interface Estado {
-  double precioPorEstado(int precioBase);
+  abstract double precioPorEstado(int precioBase);
 }

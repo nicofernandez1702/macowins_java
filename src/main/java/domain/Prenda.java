@@ -1,5 +1,7 @@
 package domain;
 
+import enums.TipoPrenda;
+
 public class Prenda {
   private int valorBase;
   private Estado estado;
@@ -19,8 +21,6 @@ public class Prenda {
     return  estado.precioPorEstado(this.valorBase);
   }
 
-  enum TipoPrenda {
-    SACO , PANTALON , CAMISA
-  }
+
 
 }

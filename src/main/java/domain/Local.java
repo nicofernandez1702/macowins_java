@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Local {
 
-  List<Venta> ventas = new ArrayList<>();
+  private List<Venta> ventas = new ArrayList<>();
 
   public void vender(Venta venta){
     ventas.add(venta);
